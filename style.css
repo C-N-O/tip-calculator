@@ -1,0 +1,139 @@
+:root {
+  --powerOffBackground: rgb(39, 39, 39);
+  --powerOffButton: rgb(189, 80, 80);
+  --powerOnButton: rgb(112, 230, 82);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  height: 550px;
+  width: 400px;
+  background-color: antiquewhite;
+  box-shadow: 0px 0px 10px 3px red;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.display {
+  height: 40%;
+  width: 98%;
+  margin: 5px auto;
+  border-radius: 1px;
+  border: 2px solid grey;
+}
+
+.screen {
+  color: var(--powerOffBackground);
+  height: 100%;
+  width: 100%;
+  background-color: var(--powerOffBackground);
+}
+
+.screen div {
+  height: calc(100% / 3);
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.tipDisplay {
+  border-top: 1px solid var(--powerOffBackground);
+  border-bottom: 1px solid var(--powerOffBackground);
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.power {
+  width: 48%;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+
+.on {
+  color: #fff;
+  background-color: var(--powerOnButton);
+}
+
+.off {
+  color: #fff;
+  background-color: var(--powerOffButton);
+}
+
+.tipBtn {
+  width: 94px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+  margin: 10px 0px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.calculate {
+  width: 58%;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+.number {
+  width: 74px;
+  height: 40px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+
+.number:hover,
+.tipBtn:hover,
+.dot:hover,
+.clear:hover,
+.calculate:hover {
+  background-color: aquamarine;
+}
+
+.dot,
+.clear {
+  width: 74px;
+  height: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  font-size: 16px;
+}
+
+.attribution p {
+  text-align: center;
+  font-size: 10px;
+}
