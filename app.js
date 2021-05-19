@@ -37,7 +37,7 @@ const calculate = () => {
 
   if (amountString == '' || tipString == '') return;
   total = amount * tip + amount;
-  totalDisplay.innerText = 'Total : $' + total;
+  totalDisplay.innerText = 'Total : $' + total.toFixed(2);
 };
 
 //power on the App
